@@ -7,6 +7,7 @@ const Auth = getAuth(app)
 const googleProvider = new GoogleAuthProvider();
 const UserProvider = ({children}) => {
     const [user, setUser] = useState(null)
+    
     const [userLoading, setUserLoading] = useState(true)
     //Register user
     const registerUser = (email, password) =>{
